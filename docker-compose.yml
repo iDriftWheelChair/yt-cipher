@@ -11,5 +11,5 @@ services:
     environment: 
       - OVERRIDE_PLAYER_VARIANT=IAS
     # UNCOMMENT API_TOKEN TO ADD A PASSWORD
-    #   - API_TOKEN=test
+      - API_TOKEN="${REMOTECIPHER_PASSWORD}"
     restart: unless-stopped
